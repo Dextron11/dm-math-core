@@ -14,12 +14,10 @@ public class Main {
 
     public static void main(String[] args){
         ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(1, 4, 6, 3, 0));
-        NNumber first = new NNumber(arr, 5);
+        arr.add(5, 2);
 
-        ArrayList<Integer> arr2 = new ArrayList<>(Arrays.asList(1, 4, 6, 3, 1));
-        NNumber second = new NNumber(arr2, 5);
 
-        System.out.print(NController.COM_NN_D(first, second));
+        System.out.print(Arrays.asList(arr));
     }
 
 }
